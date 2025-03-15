@@ -1,6 +1,46 @@
-extends layout
+const axios = require('axios');
+const cheerio = require('cheerio');
+const fs = require('fs');
+const https = require('https');
 
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+const url = 'https://www.champssports.com/product/new-balance-1906r-mens/1906ROS.html'
+const hostname = new URL(url).hostname;
+const domain = hostname.replace(/^www\./, '').replace('.com', '');
+const storename = domain.charAt(0).toUpperCase() + domain.slice(1);
+
+const shoeData = {};
+
+async function getHTML() {
+    const instance = axios.create({
+        httpsAgent: new https.Agent({
+            rejectUnauthorized: false,
+        }),
+    });
+
+    const { data: html } = await instance.get(url);
+    return html;
+}
+
+getHTML().then((res) => {
+    const $ = cheerio.load(res);
+    const store = storename;
+    const shoe = $('span.ProductName-primary').text();
+    const price = $('.ProductPrice span').text();
+    const color = $('p.ProductDetails-form__selectedStyle').text();
+    const sizes = [];
+    $('.SizeSelector-button-newDesign:not(.SizeSelectorNewDesign-button--disabled) span').each((i, size) => {
+        sizes.push($(size).text());
+    });
+    const sizeString = sizes.join(', ');
+
+    shoeData.store = store;
+    shoeData.shoe = shoe;
+    shoeData.price = price;
+    shoeData.color = color;
+    shoeData.size = sizes;
+
+    fs.writeFile('shoeData.json', JSON.stringify(shoeData), (err) => {
+        if (err) throw err;
+        console.log('file successfully saved');
+    })
+})

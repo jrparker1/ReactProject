@@ -15,7 +15,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e3be0218-543d-4990-88be-b39c935a15dc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>server\app.js</StartupFile>
+    <StartupFile>app.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,7 +35,7 @@
     <Content Include=".gitignore">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="server\app.js" />
+    <Content Include="app.js" />
     <Content Include="index.html">
       <SubType>Code</SubType>
     </Content>
@@ -44,6 +44,7 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
+    <Content Include="shoeData.json" />
     <Content Include="tsconfig.json">
       <SubType>Code</SubType>
     </Content>
