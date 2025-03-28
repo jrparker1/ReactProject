@@ -3,20 +3,24 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "build": "npm run build:client",
+    "build:client": "webpack-cli --config webpack-config.js",
+    "start:client": "webpack-dev-server --config webpack-config.js",
+    "start:server": "node server/app.js"
   },
   "description": "ReactNode",
   "author": {
     "name": ""
   },
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "cookie-parser": "^1.4.0",
-    "debug": "^2.2.0",
-    "express": "^4.14.0",
-    "morgan": "^1.7.0",
-    "pug": "^2.0.0-beta6",
-    "serve-favicon": "^2.3.0"
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
   },
   "devDependencies": {
     "eslint": "^8.21.0"
