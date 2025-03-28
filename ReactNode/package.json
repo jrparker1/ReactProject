@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app",
-    "build": "webpack-cli --config webpack-config.js"
+    "build": "npm run build:client",
+    "build:client": "webpack-cli --config webpack-config.js",
+    "start:client": "webpack-dev-server --config webpack-config.js",
+    "start:server": "node server/app.js"
   },
   "description": "ReactNode",
   "author": {

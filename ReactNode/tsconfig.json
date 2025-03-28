@@ -6,12 +6,14 @@
     "removeComments": false,
     "sourceMap": true,
     "target": "es5",
-    "jsx": "react"
+    "jsx": "react",
+    "rootDir": "./",
+    "outDir": "./dist"
   },
   "exclude": [
     "node_modules"
   ],
   "files": [
-    "app.tsx"
+    "client/app.tsx"
   ]
 }

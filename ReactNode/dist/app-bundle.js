@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./app.tsx":
-/*!*****************!*\
-  !*** ./app.tsx ***!
-  \*****************/
+/***/ "./client/app.tsx":
+/*!************************!*\
+  !*** ./client/app.tsx ***!
+  \************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -33484,7 +33484,7 @@ if (false) {} else {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./app.tsx");
+/******/ 	var __webpack_exports__ = __webpack_require__("./client/app.tsx");
 /******/ 	
 /******/ })()
 ;
