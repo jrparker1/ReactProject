@@ -1,6 +1,6 @@
 module.exports = {
     devtool: 'source-map',
-    entry: "./client/app.tsx",
+    entry: './client/app.tsx',
     mode: "development",
     output: {
         filename: "./app-bundle.js"
@@ -14,7 +14,10 @@ module.exports = {
                 test: /\.tsx$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
-                    loader: 'ts-loader'
+                    loader: 'ts-loader',
+                    options: {
+                       configFile: 'tsconfig.json',
+                    }
                 }
             }
         ]

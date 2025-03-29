@@ -34,7 +34,7 @@ var Hello = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Hello.prototype.render = function () {
-        return (React.createElement("h1", null, "Hello There"));
+        return (React.createElement("h1", null, "Hello"));
     };
     return Hello;
 }(React.Component));
