@@ -32,6 +32,9 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="client\components\SearchBox.tsx">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="dist\app-bundle.js" />
     <Content Include="dist\app-bundle.js.map" />
     <Content Include="server\apicall.js">
@@ -58,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="client\" />
+    <Folder Include="client\components\" />
+    <Folder Include="client\hooks\" />
     <Folder Include="dist\" />
     <Folder Include="config\" />
     <Folder Include="public\" />

@@ -1,12 +1,23 @@
-declare var require: any
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { SearchBox } from './components/SearchBox';
+import axios from 'axios';
 
-var React = require('react');
-var ReactDOM = require('react-dom');
+//data will be the string we send from our server
+const apiCall = () => {
+    axios.get('http://localhost:3000').then((data) => {
+        //this console.log will be in our frontend console
+        console.log(data)
+    })
+}
 
-export class Hello extends React.Component {
+class Hello extends React.Component {
     render() {
         return (
-            <h1>Hello</h1>
+            <div>
+                <SearchBox />
+                <button onClick={apiCall}> Make API CALL</button>
+            </div>
         );
     }
 }
