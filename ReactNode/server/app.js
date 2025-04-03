@@ -7,9 +7,10 @@ var app = express();
 
 app.use(cors())
 
-app.get('/', (req, res) => {
-    res.send('Hello from our server!')
-})
+// create a obect of a class that will retrieve this app.get with user providing location.
+app.get('/', function(req, res) {
+        res.send('Hello from our server!');
+    })
 
 // Allows you to set port in the project properties.
 app.set('port', process.env.PORT || 3000);
