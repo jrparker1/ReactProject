@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import * as ReactDOM from 'react-dom/client';
 import { SearchBox } from './components/SearchBox';
 import axios from 'axios';
 
@@ -22,4 +22,5 @@ class Hello extends React.Component {
     }
 }
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+root.render(<Hello />);

@@ -4,3 +4,6 @@ C:\Users\e389170\source\repos\new\ReactProject\ReactNode\bin\Microsoft.NodejsToo
 C:\Users\e389170\source\repos\ReactProject\ReactNode\obj\Debug\ReactNode.njsproj.AssemblyReference.cache
 C:\Users\e389170\source\repos\ReactProject\ReactNode\obj\Debug\ReactNode.njsproj.CoreCompileInputs.cache
 C:\Users\e389170\source\repos\ReactProject\ReactNode\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\jrpar\source\repos\ReactNode\ReactProject\ReactNode\obj\Debug\ReactNode.njsproj.AssemblyReference.cache
+C:\Users\jrpar\source\repos\ReactNode\ReactProject\ReactNode\obj\Debug\ReactNode.njsproj.CoreCompileInputs.cache
+C:\Users\jrpar\source\repos\ReactNode\ReactProject\ReactNode\bin\Microsoft.NodejsTools.WebRole.dll
