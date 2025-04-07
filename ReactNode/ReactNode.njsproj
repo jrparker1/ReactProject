@@ -49,6 +49,7 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
+    <Content Include="server\database.js" />
     <Content Include="tsconfig.json">
       <SubType>Code</SubType>
     </Content>
